@@ -1,12 +1,9 @@
-<!DOCTYPE html>
+p<!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mon Portfolio</title>
-
-    <!-- Inter font for modern UI -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome (brands + solid) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -16,143 +13,253 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-slate-900 text-slate-100 font-sans" style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial">
+<body class="bg-gray-50 text-gray-900 font-sans">
     
-<nav class="bg-slate-800/95 backdrop-blur-sm p-4 fixed w-full text-center top-0 z-50 shadow-lg">
-    <a href="#home" class="text-slate-100 mx-3 no-underline font-semibold hover:text-cyan-300"><i class="fa-solid fa-house"></i> Accueil</a>
-    <a href="#about" class="text-slate-100 mx-3 no-underline font-semibold hover:text-cyan-300"><i class="fa-solid fa-user"></i> À propos</a>
-    <a href="#projects" class="text-slate-100 mx-3 no-underline font-semibold hover:text-cyan-300"><i class="fa-solid fa-diagram-project"></i> Projets</a>
-    <a href="#experience" class="text-slate-100 mx-3 no-underline font-semibold hover:text-cyan-300"><i class="fa-solid fa-briefcase"></i> Expérience</a>
-    <a href="#contact" class="text-slate-100 mx-3 no-underline font-semibold hover:text-cyan-300"><i class="fa-solid fa-envelope"></i> Contact</a>
+<nav class="bg-white p-2 md:p-4 fixed w-full top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-center">
+        <div class="flex flex-wrap justify-center gap-2 md:gap-4">
+            <a href="#home" class="text-gray-900 text-sm md:text-base no-underline font-semibold hover:text-blue-600 transition-colors px-2 py-1"><i class="fa-solid fa-house mr-1"></i><span class="hidden sm:inline">Accueil</span></a>
+            <a href="#about" class="text-gray-900 text-sm md:text-base no-underline font-semibold hover:text-blue-600 transition-colors px-2 py-1"><i class="fa-solid fa-user mr-1"></i><span class="hidden sm:inline">À propos</span></a>
+            <a href="#projects" class="text-gray-900 text-sm md:text-base no-underline font-semibold hover:text-blue-600 transition-colors px-2 py-1"><i class="fa-solid fa-diagram-project mr-1"></i><span class="hidden sm:inline">Projets</span></a>
+            <a href="#experience" class="text-gray-900 text-sm md:text-base no-underline font-semibold hover:text-blue-600 transition-colors px-2 py-1"><i class="fa-solid fa-briefcase mr-1"></i><span class="hidden sm:inline">Expérience</span></a>
+            <a href="#contact" class="text-gray-900 text-sm md:text-base no-underline font-semibold hover:text-blue-600 transition-colors px-2 py-1"><i class="fa-solid fa-envelope mr-1"></i><span class="hidden sm:inline">Contact</span></a>
+        </div>
+    </div>
 </nav>
 
-<section id="home" class="relative h-screen bg-slate-600 p-20 pt-32 flex flex-col md:flex-row items-center gap-8 overflow-hidden">
+<section id="home" class="relative min-h-screen bg-gradient-to-br from-white to-blue-50 px-4 py-20 pt-24 md:p-20 md:pt-32 flex flex-col md:flex-row items-center gap-6 md:gap-8 overflow-hidden">
     <!-- Professional background (md+): replace ./src/professional-bg.jpg if needed -->
-    <div class="absolute inset-0 hidden md:block bg-cover bg-center" style="background-image: url('./src/professional-bg.jpg');" aria-hidden="true"></div>
-    <div class="absolute inset-0 hidden md:block bg-slate-800 bg-opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 hidden md:block bg-cover bg-center opacity-10 bg-[url('./src/professional-bg.jpg')]" aria-hidden="true"></div>
 
-    <div class="relative z-10 md:flex-1 max-w-3xl text-center md:text-left">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white">Bonjour, je suis <span class="text-cyan-300">Sami Elmouhtad</span></h1>
-    <p class="text-lg mb-6 text-slate-200">Étudiant en Sciences de Gestion et développeur full‑stack JavaScript — passionné par la création d'applications web modernes (Node.js, Express, React).</p>
-    <div class="mt-4 flex items-center justify-center md:justify-start gap-3">
-      <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-white rounded shadow">Voir mes projets <i class="fa-solid fa-arrow-right ml-2"></i></a>
-      <a href="https://github.com/elmouhtadsami-ctrl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 border border-slate-700 text-slate-100 rounded hover:border-cyan-400"><i class="fa-brands fa-github"></i> GitHub</a>
+    <div class="relative z-10 md:flex-1 max-w-4xl text-center md:text-left">
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-gray-900 leading-tight">Bonjour, je suis <span class="text-blue-600">Sami Elmouhtad</span></h1>
+    <p class="text-lg sm:text-xl mb-6 md:mb-8 text-gray-700 leading-relaxed max-w-2xl mx-auto md:mx-0">Étudiant en Sciences de Gestion et développeur full‑stack JavaScript — passionné par la création d'applications web modernes (Node.js, Express, React).</p>
+    <div class="mt-6 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 sm:gap-4">
+      <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-lg transition-colors text-sm sm:text-base"><i class="fa-solid fa-arrow-right"></i> Voir mes projets</a>
+      <a href="https://github.com/elmouhtadsami-ctrl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors text-sm sm:text-base"><i class="fa-brands fa-github"></i> GitHub</a>
     </div>
     </div>
 
-    <img src="./src/mon image.jpeg" alt="Photo de Sami" class="relative z-10 w-40 h-40 md:w-56 md:h-56 object-cover rounded-full shadow-lg border-4 border-white/70 mx-auto md:mx-0">
-
+    <img src="./src/mon image.jpeg" alt="Photo de Sami" class="relative z-10 w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 object-cover rounded-full shadow-2xl border-4 border-white mx-auto md:mx-0 flex-shrink-0">
 </section>
 
-<section id="about" class="h-screen bg-slate-600 p-20 pt-32 text-white scroll-mt-32">
-    <div class="max-w-3xl mx-auto bg-white text-slate-900 rounded-lg p-8 shadow-md">
-      <h2 class="text-3xl font-bold mb-4">À propos</h2>
-      <p class="text-lg mb-2">Développeur Full‑Stack JavaScript — j'aime concevoir des applications web performantes et maintenables.</p>
-      <ul class="list-disc list-inside text-sm text-slate-700 mb-4">
+<section id="about" class="min-h-screen bg-gray-50 px-4 py-20 pt-24 md:p-20 md:pt-32 text-gray-900 scroll-mt-32">
+    <div class="max-w-4xl mx-auto bg-white text-gray-900 rounded-xl p-6 md:p-10 shadow-xl border border-gray-200">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-blue-600">À propos</h2>
+      <p class="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">Développeur Full‑Stack JavaScript — j'aime concevoir des applications web performantes et maintenables.</p>
+      <ul class="list-disc list-inside text-sm text-gray-600 mb-6 space-y-1">
         <li>Licence en Sciences de Gestion (FSJES) — en cours (2026)</li>
-        
         <li>Formation développement web — 6 mois (en cours)</li>
         <li>Baccalauréat en Sciences Physiques (2023)</li>
       </ul>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 text-slate-900 text-sm"><i class="fa-brands fa-js"></i> JavaScript</span>
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 text-slate-900 text-sm"><i class="fa-brands fa-node-js"></i> Node.js</span>
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 text-slate-900 text-sm"><i class="fa-brands fa-react"></i> React</span>
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 text-slate-900 text-sm"><i class="fa-brands fa-github"></i> Git</span>
+      <div class="mt-6 flex flex-wrap gap-2 md:gap-3">
+        <span class="inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-xs md:text-sm font-medium"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-green-100 text-green-800 text-xs md:text-sm font-medium"><i class="fa-brands fa-node-js"></i> Node.js</span>
+        <span class="inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-xs md:text-sm font-medium"><i class="fa-brands fa-react"></i> React</span>
+        <span class="inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-gray-100 text-gray-800 text-xs md:text-sm font-medium"><i class="fa-brands fa-github"></i> Git</span>
       </div>
     </div>
 
-    
-
+    <div class="max-w-4xl mx-auto bg-white text-gray-900 rounded-xl p-6 md:p-10 shadow-xl border border-gray-200 mt-8 md:mt-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Compétences</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div class="bg-gray-50 p-4 md:p-6 rounded-lg">
+          <h3 class="text-lg md:text-xl font-semibold mb-4 text-gray-800">Soft Skills</h3>
+          <ul class="list-disc list-inside text-sm text-gray-600 space-y-2 md:space-y-3">
+            <li><i class="fa-solid fa-users mr-2 md:mr-3 text-blue-500proget is v
+                "></i> Travail d'équipe</li>
+            <li><i class="fa-solid fa-comments mr-2 md:mr-3 text-green-500"></i> Communication</li>
+            <li><i class="fa-solid fa-arrows-rotate mr-2 md:mr-3 text-purple-500"></i> Adaptabilité</li>
+            <li><i class="fa-solid fa-calendar-check mr-2 md:mr-3 text-orange-500"></i> Organisation</li>
+            <li><i class="fa-solid fa-crown mr-2 md:mr-3 text-yellow-500"></i> Leadership</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-4 md:p-6 rounded-lg">
+          <h3 class="text-lg md:text-xl font-semibold mb-4 text-gray-800">Hard Skills</h3>
+          <ul class="list-disc list-inside text-sm text-gray-600 space-y-2 md:space-y-3">
+            <li><i class="fa-solid fa-code mr-2 md:mr-3 text-yellow-500"></i> JavaScript</li>
+            <li><i class="fa-solid fa-server mr-2 md:mr-3 text-green-500"></i> Node.js</li>
+            <li><i class="fa-brands fa-react mr-2 md:mr-3 text-blue-500"></i> React</li>
+            <li><i class="fa-brands fa-git-alt mr-2 md:mr-3 text-gray-700"></i> Git</li>
+          </ul>
+        </div>
       </div>
     </div>
 
 </section>
 
-<section id="experience" class="bg-slate-800 p-20 pt-32 text-white">
-    <h2 class="text-3xl font-bold mb-8 text-white">Expérience</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <article class="bg-white text-slate-900 rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-2">Caissier — Boutique de vente</h3>
-            <p class="text-sm text-slate-700 mb-4">Rôles et responsabilités :</p>
-            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-                <li>Encaissement : Scanner articles, vérifier prix, appliquer promotions.</li>
-                <li>Paiements : Gérer espèces, cartes, mobiles ; rendre monnaie.</li>
-                <li>Accueil : Orienter clients, répondre aux questions.</li>
-                <li>Retours : Traiter échanges/remboursements selon règles.</li>
-                <li>Stocks : Signaler anomalies, aider aux inventaires.</li>
-            </ul>
-        </article>
-
-
+<section id="experience" class="bg-gray-50 px-4 py-20 pt-24 md:p-20 md:pt-32 text-gray-900">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center text-blue-600">Expérience</h2>
+        <div class="space-y-6 md:space-y-8">
+            <article class="bg-white rounded-xl p-6 md:p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto sm:mx-0">
+                        <i class="fa-solid fa-cash-register text-xl md:text-2xl text-blue-600"></i>
+                    </div>
+                    <div class="flex-1 text-center sm:text-left">
+                        <h3 class="text-lg md:text-xl font-bold mb-2 text-gray-900">Caissier — Boutique de vente</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">Rôles et responsabilités :</p>
+                        <ul class="space-y-2 text-left">
+                            <li class="flex items-start gap-2 md:gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i>
+                                <span>Encaissement : Scanner articles, vérifier prix, appliquer promotions.</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i>
+                                <span>Paiements : Gérer espèces, cartes, mobiles ; rendre monnaie.</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i>
+                                <span>Accueil : Orienter clients, répondre aux questions.</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i>
+                                <span>Retours : Traiter échanges/remboursements selon règles.</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-0.5 flex-shrink-0"></i>
+                                <span>Stocks : Signaler anomalies, aider aux inventaires.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
 </section>
 
 
 
-<section id="projects" class="bg-slate-800 p-20 pt-32 text-white">
-    <h2 class="text-3xl font-bold mb-8 text-white">Mes projets</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="bg-white text-slate-900 rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-2">SM.Transport</h3>
-            <p class="text-sm text-slate-700 mb-2">Site de démonstration lié au transport (HTML & CSS). Contient pages : index, about, contact, et scripts.</p>
-            <p class="text-xs text-slate-500 mb-4">Technologies: HTML, CSS</p>
-            <div class="flex items-center space-x-3">
-                <a href="https://raw.githack.com/elmouhtadsami-ctrl/SM.Transport/main/index.html" target="_blank" rel="noopener noreferrer" class="inline-block px-3 py-2 bg-slate-800 text-white rounded hover:bg-slate-700">Voir</a>
-                <a href="https://github.com/elmouhtadsami-ctrl/SM.Transport" target="_blank" rel="noopener noreferrer" class="inline-block text-slate-700 hover:text-slate-900">Code</a>
-            </div>
-        </article>
+<section id="projects" class="bg-gray-50 px-4 py-20 pt-24 md:px-8 md:py-20 md:pt-32 text-gray-900">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center text-blue-600">Mes projets</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <article class="bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div class="mb-4">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=200&fit=crop&crop=center" alt="SM.Transport - Transport Services" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-truck text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">SM.Transport</h3>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">Site de démonstration lié au transport (HTML & CSS). Contient pages : index, about, contact, et scripts.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-medium">
+                        <i class="fa-brands fa-html5"></i> HTML
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">
+                        <i class="fa-brands fa-css3-alt"></i> CSS
+                    </span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="https://raw.githack.com/elmouhtadsami-ctrl/SM.Transport/main/index.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+                        <i class="fa-solid fa-eye"></i> Voir
+                    </a>
+                    <a href="https://github.com/elmouhtadsami-ctrl/SM.Transport" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-lg transition-colors">
+                        <i class="fa-brands fa-github"></i> Code
+                    </a>
+                </div>
+            </article>
 
+            <article class="bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div class="mb-4">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop&crop=center" alt="Upcoming Project - Modern Web Development" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-plus text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Projet à venir</h3>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">Nouveau projet en développement. Site web moderne avec technologies avancées.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-xs font-medium">
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">
+                        <i class="fa-brands fa-react"></i> React
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium">
+                        <i class="fa-brands fa-node-js"></i> Node.js
+                    </span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-300 text-gray-600 rounded-lg cursor-not-allowed">
+                        <i class="fa-solid fa-clock"></i> Bientôt
+                    </span>
+                </div>
+            </article>
 
-
-        <article class="bg-white text-slate-900 rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-2">Autre projet</h3>
-            <p class="text-sm text-slate-700">Ajoutez d'autres projets ici (site web, application, scripts).</p>
-        </article>
+            <article class="bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div class="mb-4">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop&crop=center" alt="Scripts Utiles - JavaScript Automation" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-code text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Scripts Utiles</h3>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-4 leading-relaxed">Collection de scripts JavaScript pour automatiser des tâches quotidiennes.</p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-xs font-medium">
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-xs font-medium">
+                        <i class="fa-brands fa-git-alt"></i> Git
+                    </span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="https://github.com/elmouhtadsami-ctrl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-lg transition-colors">
+                        <i class="fa-brands fa-github"></i> Explorer
+                    </a>
+                </div>
+            </article>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="bg-slate-800 p-20 pt-32 text-white">
-    <h2 class="text-3xl font-bold mb-6 text-white">Contact</h2>
-    <div class="space-y-4 max-w-xl">
-      <a href="#" id="copy-email" class="flex items-center space-x-4 hover:text-slate-200" title="Copier l'email">
-        <svg class="w-6 h-6 md:w-8 md:h-8 text-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m0 8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h14a2 2 0 012 2v8z" />
-        </svg>
-        <span class="text-lg">elmouhtadsami@gmail.com</span>
-      </a>
+<section id="contact" class="bg-gray-50 px-4 py-20 pt-24 md:px-8 md:py-20 md:pt-32 text-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-blue-600">Contact</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <a href="#" id="copy-email" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-200 flex flex-col items-center space-y-3 hover:border-blue-300" title="Copier l'email">
+          <i class="fa-solid fa-envelope text-3xl text-blue-600"></i>
+          <span class="text-lg font-medium text-gray-800">Email</span>
+          <span class="text-sm text-gray-600">elmouhtadsami@gmail.com</span>
+        </a>
 
-      <a href="#" id="copy-phone" class="flex items-center space-x-4 hover:text-slate-200" title="Copier le numéro">
-        <svg class="w-6 h-6 md:w-8 md:h-8 text-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2.6a1 1 0 01.95.684l.7 2.1a1 1 0 01-.217.955L8.1 9.6a12.042 12.042 0 005.3 5.3l2.1-1.638a1 1 0 01.955-.217l2.1.7A1 1 0 0121 16.4V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V5z" />
-        </svg>
-        <span class="text-lg">06 02 90 35 29</span>
-      </a>
+        <a href="#" id="copy-phone" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-200 flex flex-col items-center space-y-3 hover:border-blue-300" title="Copier le numéro">
+          <i class="fa-solid fa-phone text-3xl text-green-600"></i>
+          <span class="text-lg font-medium text-gray-800">Téléphone</span>
+          <span class="text-sm text-gray-600">06 02 90 35 29</span>
+        </a>
 
-      <a href="https://instagram.com/sami_emd1" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-slate-200" aria-label="Instagram profile">
-        <svg class="w-6 h-6 md:w-8 md:h-8 text-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm5 5a5 5 0 100 10 5 5 0 000-10zm4.75-.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-        </svg>
-        <span class="text-lg">@sami_emd1</span>
-      </a>
+        <a href="https://instagram.com/sami_emd1" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-200 flex flex-col items-center space-y-3 hover:border-blue-300" aria-label="Instagram profile">
+          <i class="fa-brands fa-instagram text-3xl text-pink-600"></i>
+          <span class="text-lg font-medium text-gray-800">Instagram</span>
+          <span class="text-sm text-gray-600">@sami_emd1</span>
+        </a>
 
-      <a href="https://github.com/elmouhtadsami-ctrl" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-slate-200" aria-label="GitHub profile">
-        <svg class="w-6 h-6 md:w-8 md:h-8 text-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.73.083-.73 1.205.084 1.84 1.234 1.84 1.234 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.932 0-1.31.468-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.807 5.628-5.479 5.922.43.372.823 1.102.823 2.222v3.293c0 .32.216.694.825.576C20.565 22.092 24 17.593 24 12.297 24 5.67 18.627.297 12 .297z" />
-        </svg>
-        <span class="text-lg">GitHub</span>
-      </a>
+        <a href="https://github.com/elmouhtadsami-ctrl" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-200 flex flex-col items-center space-y-3 hover:border-blue-300" aria-label="GitHub profile">
+          <i class="fa-brands fa-github text-3xl text-gray-800"></i>
+          <span class="text-lg font-medium text-gray-800">GitHub</span>
+          <span class="text-sm text-gray-600">elmouhtadsami-ctrl</span>
+        </a>
 
-      <a href="https://wa.me/+212602903529" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 hover:text-slate-200" aria-label="WhatsApp">
-        <svg class="w-6 h-6 md:w-8 md:h-8 text-white flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M20.52 3.48A11.83 11.83 0 0012.01.5C6.53.5 2.1 4.93 2.1 10.41c0 1.83.48 3.61 1.39 5.19L2 22l6.57-1.67a11.6 11.6 0 004.54 0 11.83 11.83 0 004.91-3.58 11.96 11.96 0 003-8.07 11.83 11.83 0 00-3.49-8.07zM12 20.1c-2.52 0-4.88-.68-6.9-1.93l-.5-.31-3.89 1 1.04-3.8-.33-.61A9.8 9.8 0 012.1 10.4c0-5.08 4.13-9.21 9.21-9.21 2.46 0 4.77.96 6.52 2.71A9.16 9.16 0 0121.7 10.4c0 2.46-.96 4.77-2.71 6.52-1.83 1.86-4.27 2.98-7 2.98z" />
-        </svg>
-        <span class="text-lg">WhatsApp</span>
-      </a>
+        <a href="https://wa.me/+212602903529" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-gray-200 flex flex-col items-center space-y-3 hover:border-blue-300 md:col-span-2 lg:col-span-1" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp text-3xl text-green-500"></i>
+          <span class="text-lg font-medium text-gray-800">WhatsApp</span>
+          <span class="text-sm text-gray-600">+212 602 903 529</span>
+        </a>
+      </div>
     </div>
 </section>
 
-<footer class="bg-slate-800 text-white text-center py-4 mt-8">
+<footer class="bg-gray-100 text-gray-900 text-center py-4 mt-8">
     <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
 </footer>
 
